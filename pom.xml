@@ -4,7 +4,7 @@
 
   <groupId>it.zenitlab</groupId>
   <artifactId>json-rpc-commons</artifactId>
-  <version>1.5</version>
+  <version>1.5.0</version>
   <packaging>jar</packaging>
 
   <name>json-rpc-commons</name>
