@@ -17,7 +17,7 @@ limitations under the License.
 package it.zenitlab.jsonrpc.commons;
 
 /**
- * From <a href="http://jsonrpc.org/spec.html">http://jsonrpc.org/spec.html</a>.<br /><br />
+ * From <a href="http://jsonrpc.org/spec.html">http://jsonrpc.org/spec.html</a>.<br><br>
  * A rpc call is represented by sending a Request object to a Server. The Request object has the following members:
  * <dl>
  * <dt>jsonrpc</dt>
@@ -30,12 +30,12 @@ package it.zenitlab.jsonrpc.commons;
  * <dl>
  * <dt>params</dt>
  * <dd>A Structured value that holds the parameter values to be used during the invocation of the method. This member MAY be omitted.</dd>
+ * </dl>
  * <dl>
  * <dt>id</dt>
  * <dd>An identifier established by the Client that MUST contain a String, Number, or NULL value if included. If it is not included it is assumed to be a notification. The value SHOULD normally not be Null <a href="#id1">[1]</a> and Numbers SHOULD NOT contain fractional parts <a href="#id2">[2]</a><br>
  * <br>
- * The Server MUST reply with the same value in the Response object if included. This member is used to correlate the context between the two objects.<br /><br />
- * </p>
+ * The Server MUST reply with the same value in the Response object if included. This member is used to correlate the context between the two objects.<br><br>
  * <div>
  * <p>[1] The use of Null as a value for the id member in a Request object is discouraged, because this specification uses a value of Null for Responses with an unknown id. Also, because JSON-RPC 1.0 uses an id value of Null for Notifications this could cause confusion in handling.</p>
  * </div>
@@ -59,7 +59,6 @@ package it.zenitlab.jsonrpc.commons;
  * <li>by-name: params MUST be an Object, with member names that match the Server expected parameter names. The absence of expected names MAY result in an error being generated. The names MUST match exactly, including case, to the method's expected parameters.</li>
  * </ul>
  * </div>
- * </dl>
  */
 public abstract class JsonRpcRequest {
 

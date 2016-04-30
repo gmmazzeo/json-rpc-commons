@@ -18,7 +18,7 @@ package it.zenitlab.jsonrpc.commons;
 
 /**
  * From
- * <a href="http://jsonrpc.org/spec.html">http://jsonrpc.org/spec.html</a>.<br /><br />
+ * <a href="http://jsonrpc.org/spec.html">http://jsonrpc.org/spec.html</a>.<br><br>
  * When a rpc call encounters an error, the Response Object MUST contain the
  * error member with a value that is a Object with the following members:
  * <dl>
@@ -42,7 +42,7 @@ package it.zenitlab.jsonrpc.commons;
  * below is reserved for future use. The error codes are nearly the same as
  * those suggested for XML-RPC at the following url:
  * <a href="http://xmlrpc-epi.sourceforge.net/specs/rfc.fault_codes.php">http://xmlrpc-epi.sourceforge.net/specs/rfc.fault_codes.php</a>
- * <table>
+ * <table summary="">
  * <tr><td>code</td><td>detailedMessage</td><td>meaning</td></tr>
  * <tr><td>-32700</td><td>Parse error</td><td>Invalid JSON was received by the
  * server. An error occurred on the server while parsing the JSON
@@ -98,12 +98,6 @@ public class JsonRpcError {
         this.data = data;
     }
 
-    /**
-     * Returns a JsonRpcResponse enclosing this JsonRpcError.
-     *
-     * @param responseId
-     * @return A JsonRpcResponse enclosing this JsonRpcError.
-     */
     public JsonRpcResponse toJsonRpcResponse(Object responseId) {
         JsonRpcResponse res = new JsonRpcResponse();
         res.setError(this);

@@ -17,10 +17,10 @@ limitations under the License.
 package it.zenitlab.jsonrpc.commons;
 
 /**
- * From <a href="http://jsonrpc.org/spec.html">http://jsonrpc.org/spec.html</a>.<br /><br />
+ * From <a href="http://jsonrpc.org/spec.html">http://jsonrpc.org/spec.html</a>.<br><br>
  * When a rpc call is made, the Server MUST reply with a Response, except for in 
  * the case of Notifications. The Response is expressed as a single JSON Object, 
- * with the following members:<br />
+ * with the following members:<br>
  * <dl>
  * <dt>jsonrpc</dt>
  * <dd>A String specifying the version of the JSON-RPC protocol. MUST be exactly "2.0".</dd>
